@@ -13,4 +13,5 @@ inflation = web.DataReader(['CPIAUCSL', 'CPILFESL'], 'fred', start, end)
 print(inflation.head())
 
 inflation.plot()
-plt.savefig('website/static/FREDTEST.png')
+plt.savefig('website/static/FREDTEST.png') 
+

@@ -1,0 +1,59 @@
+{% extends "layout.html" %}
+{% block content %}
+    <p class="whitespace">
+    <div class="content-section">
+        <form method="POST" action="">
+            {{ form.hidden_tag() }}
+            <fieldset class="stock-group">
+          
+     <div class="stock-group">
+     {{ form.stock.label(class="form-control-label") }}
+     {% if form.stock.errors %}
+       {{ form.stock(class="form-control form-control-lg is-invalid") }}
+       <div class="invalid-feedback">
+         {% for error in form.stock.errors%}
+             <span>{{error}}</span>
+         {% endfor %}
+       </div>
+   {% else %}
+       {{ form.stock(class="form-control form-control-lg") }}
+   {% endif %}
+                </div>
+      
+     <div class="stock-group">
+     {{ form.start.label(class="form-control-label") }}
+     {% if form.start.errors %}
+       {{ form.start(class="form-control form-control-lg is-invalid") }}
+       <div class="invalid-feedback">
+         {% for error in form.start.errors%}
+             <span>{{error}}</span>
+         {% endfor %}
+       </div>
+   {% else %}
+       {{ form.start(class="form-control form-control-lg") }}
+   {% endif %}
+                </div>
+                
+     <div class="stock-group">
+     {{ form.finish.label(class="form-control-label") }}
+     {% if form.finish.errors %}
+       {{ form.finish(class="form-control form-control-lg is-invalid") }}
+       <div class="invalid-feedback">
+         {% for error in form.finish.errors%}
+             <span>{{error}}</span>
+         {% endfor %}
+       </div>
+   {% else %}
+       {{ form.finish(class="form-control form-control-lg") }}
+   {% endif %}
+                </div>
+                
+                
+    </fieldset>
+          <div class="stock-group">
+             {{ form.enter(class="btn btn-outline-info") }}
+          </div>
+         </form>
+     </div>
+<p class="whitespace">
+ {% endblock content %}

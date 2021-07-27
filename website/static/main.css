@@ -1,80 +1,27 @@
-body {
-  background: #fafafa;
-  color: #333333;
-  margin-top: 5rem;
+p.whitespace {
+    white - space: pre
 }
 
-h1, h2, h3, h4, h5, h6 {
-  color: #444444;
+.boxed {
+    background - color:  # acd7e5 ;
+    padding: 10px
+    border: 1px solid black
 }
 
-.bg-steel {
-  background-color: #3B3B9F;
+.headerbackground{padding:2rem 1rem;margin-bottom:2rem;background-color:#D6EAF8;border-radius:.3rem}@media (min-width:576px){.headerbackground{padding:4rem 2rem}}.headerbackground-fluid{padding-right:0;padding-left:0;border-radius:0}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
 }
 
-.site-header .navbar-nav .nav-link {
-  color: #cbd5db;
+/*responsive layout*/
+@media screen and (max-width: 800px) {
+  .column {   
+    width: 100%;
+    padding: 0;
+  }
 }
 
-.site-header .navbar-nav .nav-link:hover {
-  color: #ffffff;
-}
-
-.site-header .navbar-nav .nav-link.active {
-  font-weight: 500;
-}
-
-.content-section {
-  background: #ffffff;
-  padding: 10px 20px;
-  border: 1px solid #dddddd;
-  border-radius: 3px;
-  margin-bottom: 20px;
-}
-
-.article-title {
-  color: #444444;
-}
-
-a.article-title:hover {
-  color: #428bca;
-  text-decoration: none;
-}
-
-.article-content {
-  white-space: pre-line;
-}
-
-.article-img {
-  height: 65px;
-  width: 65px;
-  margin-right: 16px;
-}
-
-.article-metadata {
-  padding-bottom: 1px;
-  margin-bottom: 4px;
-  border-bottom: 1px solid #e3e3e3
-}
-
-.article-metadata a:hover {
-  color: #333;
-  text-decoration: none;
-}
-
-.article-svg {
-  width: 25px;
-  height: 25px;
-  vertical-align: middle;
-}
-
-.account-img {
-  height: 125px;
-  width: 125px;
-  margin-right: 20px;
-  margin-bottom: 16px;
-}
-
-.account-heading {
-  font-size: 2.5rem;
-}
